@@ -1,0 +1,850 @@
+/*--- web fonts */
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+/*
+font-family: 'Bree Serif', serif;
+font-family: 'Bungee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Slabo 27px', serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+#container {
+    margin: 0 auto 0 auto;
+    /* top right bottom left */
+    
+   /* width: 1000px;*/
+
+    /* overflow: auto; */
+}
+
+header {
+    padding: 10px 15px;
+    
+    /* width: 970px; */
+    height: auto;
+    
+    /* float: left;
+    clear: both; */
+    
+    background-color: black;
+}
+
+
+/*--- logo section */
+
+#logo {
+    /* width: 475px; */
+    height: 40px;
+    text-align: center;
+    
+    /* float: left; */
+}
+
+h1 {
+    font-family: 'Bungee', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+        
+    color: white;
+}
+
+
+/*--- nav section */
+
+nav {
+    /* margin-top: 18px; */
+    /* width: 475px; */
+    padding-bottom: 4px;
+    /* float: right; */
+    
+    /* text-align: right; */
+    word-spacing: 15px;
+}
+
+nav p {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav p > a {
+    margin-top: 14px;
+}
+
+nav p a {
+    text-decoration: none;
+    transition: .5s;
+    margin: 20px;
+}
+
+nav a {
+    margin-top: 23px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    
+    letter-spacing: .25em;
+    
+    /* text-align: right; */
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: #fff;
+}
+
+nav a:hover {
+    color: #a5e4f7;
+    background: orangered;
+    text-decoration: none;
+}
+
+
+/*--- hero section */
+
+#hero-image {
+    margin-bottom: 10px;
+
+    padding: 75px 0 0 20px;
+    /* width: 980px; */
+    height: 340px;
+    
+    /* float: left;
+    clear: both; */
+    
+    background-image: url(../images/hero-cayenne_pepper_soup.jpg);
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-weight: normal;
+    font-size: 48px;
+        
+    letter-spacing: .01em;
+
+    text-transform: uppercase;
+    
+    color: white;
+}
+
+h3 {
+    margin-top: -10px;
+    font-family: 'Slabo 27px', serif;
+    font-weight: normal;
+    font-size: 24px;
+        
+    letter-spacing: .025em;
+
+    color: white;
+}
+
+#hero-image a {
+    text-decoration: none;
+}
+
+.hero-button {
+    margin-top: 10px;
+    padding: 5px 7px;
+
+    display: inline-block;
+    
+    border-radius: 5px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+        
+    letter-spacing: .2em;
+    
+    text-transform: uppercase;
+
+    color: white;
+    
+    background-color: #9a1111;
+    
+    border: 1px solid #fff;
+}
+
+.hero-button:hover {
+    background-color: #5d1616;
+}
+
+
+/*--- meals section */
+
+#meals {
+    margin: 10px 0;
+
+
+
+    /* width: 1000px;
+    
+    float: left;
+    clear: both; */
+}
+
+.meal > img {
+    grid-template-columns: repeat (auto-fit, minmax(600px,1fr));
+    grid-gap: 1rem;
+}
+
+.meal {
+    margin: 0 7px;
+    padding: 2rem;
+
+    
+    /* width: 319px;
+    
+    float: left; */
+}
+
+.meal img {
+    margin-bottom: 8px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.meal h2 {
+    margin-bottom: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    
+    text-transform: uppercase;
+    color: #000;
+}
+
+.meal p {
+    margin-bottom: 15px;
+    /* position: relative; */
+    bottom: 0;
+    
+    font-family: 'Slabo 27px', serif;
+    /* font-size: 13px; */
+    
+    line-height: 20px;
+    
+    color: #000;
+}
+
+.meal p>a {
+    padding: 5px 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    
+    background-color: #649600;
+    
+    border-radius: 3px;
+}
+
+.meal p>a:hover {
+    background-color: #597c14;
+}
+
+
+/*--- gallery section */
+
+#gallery {
+    margin: 10px 0;
+    padding: 10px 5px 20px 10px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    
+    /* width: 985px;
+    
+    float: left;
+    clear: both; */
+    
+    background-color: #2d2d30;
+}
+
+#gallery-text {
+    /* width: 225px;
+    float: left; */
+    margin-left: 35px;
+    text-align: right;
+}
+
+#gallery-text h2 {
+    margin-bottom: 5px;
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#gallery-text p {
+    margin-bottom: 15px;
+    
+    font-family: 'Slabo 27px', serif;
+    font-size: 14px;
+    
+    line-height: 20px;
+    
+    color: #fff;
+}
+
+#gallery-text p>a {
+    padding: 5px 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    
+    background-color: #649600;
+    
+    border-radius: 3px;
+}
+
+#gallery-text p>a:hover {
+    background-color: #597c14;
+}
+
+#gallery-photos {
+    /* margin-left: 10px; */
+    /* display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+    padding: 30px; */
+    margin-right: 15px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    padding-left: 10px;
+    grid-column: span 2;
+    
+    /* width: 750px;
+    float: left; */
+}
+
+#gallery-photos img {
+    margin: 0px 5px 10px 5px;
+}
+
+
+/*--- services section */
+
+#services {
+    margin: 10px 0;
+    
+    /* width: 1000px;
+    
+    float: left;
+    clear: both; */
+}
+
+#services h2 {
+    margin-bottom: 50px;
+
+    font-family: 'Bungee', cursive;
+    font-weight: 700;
+    font-size: 24px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #2d2d30;
+}
+
+.service {
+    margin: 0 5px;
+    
+    /* width: 225px;
+    
+    float: left; */
+    
+    text-align: center;
+}
+
+.service img {
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-bottom: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align:center;
+    text-transform: uppercase;
+    color: #2d2d30;
+}
+
+.service p {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 13px;
+    
+    line-height: 20px;
+    
+    text-align: center;
+    
+    color: rgb(104, 101, 101);
+}
+
+
+/*--- footer */
+
+footer {
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    
+    /* width: 980px; */
+    min-height: 100px;
+    
+    /* float: left;
+    clear: both; */
+    
+    color: #c6c6c6;
+    
+    background-color: #2d2d30;
+}
+
+#footer-logo {
+    margin-right: 10px;
+    /* width: 180px;
+    float: left; */
+}
+
+#footer-logo h2 {
+    font-family: 'Bungee', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    line-height: 24px;
+        
+    color: #c6c6c6;
+}
+
+#footer-logo a {
+    text-decoration: none;
+    
+    color: #c6c6c6;
+}
+
+#footer-logo a:hover {
+    color: #fff;
+}
+
+#footer-logo p {
+    margin-top: 5px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+        
+    color: #c6c6c6;
+}
+
+.footer-nav {
+    margin-right: 10px;
+    
+    /* width: 150px; */
+    min-height: 140px;
+    padding-right: 30px;
+    
+    float: left;
+    
+    border-left: #ccc dotted 1px;
+}
+
+.footer-nav ul {
+    margin-left: 10px;
+    
+    list-style: none;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-nav li img {
+    margin-right: 10px;
+}
+
+.footer-nav li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+        
+    color: #c6c6c6;
+}
+
+.footer-nav li a:hover {
+    color: #fff;
+}
+
+.footer-newsletter {
+    margin-right: 10px;
+    padding-left: 20px;
+    
+    /* width: 255px; */
+    min-height: 140px;
+    
+    /* float: left; */
+    
+    border-left: #ccc dotted 1px;
+}
+
+.footer-newsletter p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    
+    text-transform: uppercase;
+    
+    letter-spacing: 3px;
+}
+
+.email-address {
+    margin-top: 10px;
+    padding: 7px;
+    
+    width: 168px;
+    height: 12px;
+    
+    /* float: left; */
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    
+    color: #535353;
+
+    text-transform: uppercase;
+    
+    background-color: #fff;
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.send {
+    margin-top: 10px;
+    padding: 5px 7px 7px 7px;
+    
+    width: 30px;
+    height: 14px;
+    
+   
+    
+    text-align: center;
+
+    background-color: #649600;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.send:hover {
+    background-color: #85bc16;
+}
+
+
+/******Media Quries******/
+/**********Min-width: 600px********/
+@media (min-width: 600px) {
+
+    #logo {
+        margin-right: auto;
+        /* float: left; */
+    }
+
+    /* header {
+        /* float: left; */
+
+
+    h2, h3 {
+        text-align: center;
+    }
+
+
+    nav {
+        /* float: right; */
+        /* text-align: right; */
+    }
+    nav p {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+}
+
+/******* Medium devices (i.e. tablets in landscape *****/
+
+@media (min-width: 800px) {
+
+    #logo {
+        margin-right: auto;
+        /* float: left; */
+    }
+
+    /* header {
+        /* float: left; */
+
+
+    h2, h3 {
+        text-align: left;
+    }
+    #meals {
+        margin: 10px 0;
+        
+        width: 1000px;
+        
+        float: left;
+        clear: both;
+        background-color:white;
+    }
+    
+    .meal {
+        margin: 0 7px;
+        
+        width: 319px;
+        
+        float: left;
+
+    }
+    
+    .meal img {
+        margin-bottom: 8px;
+    }
+    #gallery {
+        
+        /* float: left; */
+        clear: both; 
+        
+    }
+
+    .gallery {
+        width: auto;
+    }
+
+    #gallery-text {
+        width: 225px;
+        float: left; 
+        margin-left: 35px;
+        text-align: right;
+    }
+
+    #gallery-photos {
+        float: clear;
+    }
+
+    #services {
+        margin: 10px 0;
+        
+        /* width: 1000px;*/
+        
+        float: left;
+        clear: both; 
+    }
+
+    .service {
+        margin: 0 5px;
+        
+        width: 225px;
+        
+        float: left; 
+        text-align: center;
+    }
+
+    footer {
+        margin: 20px 0 20px 0;
+        padding: 10px;
+        
+        /* width: 980px; */
+        min-height: 100px;
+        
+        /* float: left;*/
+        clear: both;
+        
+        color: #c6c6c6;
+        
+        background-color: #2d2d30;
+    }
+    .email-address, .send {
+        
+        float: left;
+        
+
+    }
+
+
+}
+
+
+/******** Large devices (i.e. desktop)******/
+
+@media (min-width: 1200px) {
+
+    #logo {
+        margin-right: auto;
+        /* float: left; */
+    }
+    #hero-image {
+        margin-bottom: 10px;
+        background-size:cover;
+    
+        padding: 75px 0 0 20px;
+        /* width: 980px; */
+        height: 340px;
+        
+        /* float: left;
+        clear: both; */
+        
+        background-image: url(../images/hero-cayenne_pepper_soup.jpg);
+        background-repeat: no-repeat;
+    }
+    /* header {
+        /* float: left; */
+    
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 42px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+    h2, h3 {
+        text-align: left;
+    }
+    #meals {
+        width: auto;
+    }
+    
+    .meal img {
+        margin-bottom: 8px;
+    }
+
+    #gallery {
+        
+        /* float: left; */
+        clear: both; 
+        
+    }
+
+    .gallery {
+        width: auto;
+    }
+
+    #gallery-text {
+        width: 225px;
+        float: left; 
+        margin-left: 35px;
+        text-align: right;
+    }
+
+    #gallery-photos {
+        /* margin-right: 15px; */
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: 150px;
+        grid-auto-columns: 20px;
+        grid-auto-flow: dense;
+        /* padding-left: 10px; */
+        grid-column: span 3;
+        
+        /* width: 750px;
+        float: left; */
+    }
+
+    
+    #services {
+        margin: 10px 0;
+        width: auto;
+        padding-right: 100px;
+        padding-left: 220px;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    #serivces h2{
+        text-align: center;
+    }
+
+
+    .service {
+        margin: 0 5px;
+        text-align: center;
+    }
+
+
+
+    footer {
+        margin: 20px 0 20px 0;
+        padding: 50px;
+        padding-left: 200px;
+        width:auto;
+    }
+    
+    #footer-logo {
+        margin-right: 10px;
+        width: 180px;
+        float: left;
+    }
+    
+
+    .footer-nav, .footer-newsletter, .email-address, .send   {
+        
+        float: left;
+        
+    }
+
+
+}
